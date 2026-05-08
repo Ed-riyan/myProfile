@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --color-background: #0f172a;
+  --color-surface: #111827;
+  --color-card: #1f2937;
+  --color-primary: #6366f1;
+  --color-primary-hover: #818cf8;
+  --color-text-main: #f8fafc;
+  --color-text-secondary: #94a3b8;
+  --color-border-custom: #334155;
+}
+
+:root {
+  --color-base-100: #0f172a;
+  --color-base-200: #111827;
+  --color-base-300: #1f2937;
+  --color-primary: #6366f1;
+  --color-base-content: #f8fafc;
+  --color-neutral: #94a3b8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-background);
+  color: var(--color-text-main);
+}
+
+body {
+  font-family: var(--font-poppins), sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text-main);
+}
+
+/* Navbar exit-to-right behavior */
+.group:not(:hover) .nav-hover-line:not([data-framer-id]) {
+  transform: translateX(101%);
+  transition: transform 0.3s ease-in-out;
+}
