@@ -5,6 +5,7 @@ import "./globals.css";
 
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
+import About from "./about/page";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -31,7 +32,7 @@ export default function RootLayout({
           <main className="flex-1">
             {children}
           </main>
-
+          
           <Footer />
         </div>
       </body>
